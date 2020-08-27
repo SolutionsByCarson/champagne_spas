@@ -1,0 +1,15 @@
+##---- Ignore the files below ----##
+
+.idea
+
+node_modules/
+node_modules/*
+dist/*
+package-lock.json/
+
+.htaccess
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite

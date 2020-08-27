@@ -1,0 +1,178 @@
+// -------------------------------------------- //
+//  NAME: Variables.scss
+//  VERSION: 1.0
+//  DESCRIPTION: Declare variables/constants for use throughout SASS
+// -------------------------------------------- //
+
+
+// -------- IMPORT BOOTSTRAP VARS & FUNCTIONS ------- //
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/grid";
+
+
+// --------------------------------------------- //
+// SECTION 1 - FONTS
+// --------------------------------------------- //
+
+// Import font families
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+// font families
+$headings-font-family: 'Lato', sans-serif;
+$headings-font-style: normal;
+$headings-font-weight: 400;
+
+$quote-font-family: 'Roboto', sans-serif;
+$quote-font-style: italic;
+$quote-font-weight: 400;
+
+$btn-font-family: 'Lato', sans-serif;
+$btn-font-style: normal;
+$btn-font-weight: 400;
+$btn-font-size: .9rem;
+
+$font-family-base: 'Roboto', sans-serif;
+$font-style-base: normal;
+$font-weight-base: 400;
+$font-color-base: #606161;
+
+// base font size
+$body-size: 17px;
+$body-size-mobile: 16px;
+
+// type
+$display-1-size:  2.5rem;
+$display-1-size-md: 2.5rem;
+$display-1-size-sm: 2.25rem;
+$display-2-size: 2.25rem;
+$h1-font-size: 2.25rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.375rem;
+$h4-font-size: 1.25rem;
+$quote-font-size: 1.25rem;
+$h5-font-size: 1.2rem;
+$h6-font-size: 1.1rem;
+$small-mobile-size: .925rem;
+$x-small-font-size: .8rem;
+
+
+// --------------------------------------------- //
+// SECTION 2 - GRID
+// --------------------------------------------- //
+
+$content-width: 70rem;
+$grid-gutter-width: 2rem;
+
+
+//spacers
+$spacer: 1rem !default;
+$spacers: () !default;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: (
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 2),
+        6: ($spacer * 3),
+        7: ($spacer * 4),
+        8: ($spacer * 5),
+);
+
+// declare spacing shorthand vars
+$s: $spacer;
+$s0: 0;
+$s1: ($spacer * .25);
+$s2: ($spacer * .5);
+$s3: $spacer;
+$s4: ($spacer * 1.5);
+$s5: ($spacer * 2);
+$s6: ($spacer * 3);
+$s7: ($spacer * 4);
+$s8: ($spacer * 5);
+
+// --------------------------------------------- //
+// SECTION 3 - COLORS
+// --------------------------------------------- //
+
+// NOTE: Use bootstrap var names instead of custom red/yellow/etc.
+$xl-primary : #F6F6F6;
+$l-primary : #13bcbc;
+$primary : #006f6f;
+$d-primary : #005353;
+$xd-primary : #003838;
+
+$l-secondary : rgba(#2A3067, 0.175);
+$secondary : #2A3067;
+$d-secondary : #20244D;
+
+$l-tertiary : #F6B895;
+$tertiary : #E95B24;
+$d-tertiary : #AA4424;
+
+$black  : #000;
+$xd-gray : #191919;
+$d-gray : #4D4D4D;
+$gray : #686868;
+$l-gray : #e2e2e2;
+$xl-gray : #EBEBEB;
+$white  : #ffffff;
+
+// Add Colors to Theme Colors
+$theme-colors: (
+'xl-primary' : $xl-primary,
+'l-primary' : $l-primary,
+'primary' : $primary,
+'d-primary' : $d-primary,
+'xd-primary' : $xd-primary,
+
+'l-secondary' : $l-secondary,
+'secondary' : $secondary,
+'d-secondary' : $d-secondary,
+
+'l-tertiary' : $l-tertiary,
+'tertiary' : $tertiary,
+'d-tertiary' : $d-tertiary,
+
+'black' : $black,
+'xd-gray' : $xd-gray,
+'gray' : $gray,
+'l-gray' : $l-gray,
+'xl-gray' : $xl-gray,
+'white' : $white
+);
+
+// --------------------------------------------- //
+//           BUTTONS
+// --------------------------------------------- //
+
+// button line-height
+$btn-line-height: 1;
+$btn-line-height-lg: 1;
+$btn-line-height-sm: 1;
+
+// button padding
+$btn-padding-y: .875rem;
+$btn-padding-x: 1.5rem;
+$btn-padding-y-lg: .875rem;
+$btn-padding-x-lg: 1.5rem;
+$btn-padding-y-sm: .675rem;
+$btn-padding-x-sm: 1rem;
+
+// button borders
+$btn-border-radius: 2.75rem;
+$btn-border-radius-lg: 2.75rem;
+$btn-border-radius-sm: 2.75rem;
+$btn-border-width: 3px;
+
+
+// --------------------------------------------- //
+//           CARDS
+// --------------------------------------------- //
+//$card-border-radius: 0;
